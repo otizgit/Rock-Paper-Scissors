@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock | Paper | Scissors</title>
+    <script defer src="./app.js"></script>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="game-header">
+                <div class="game-logo">
+                    <img src="./images/logo-bonus.svg" alt="">
+                </div>
+                <div class="score-board">
+                    <div class="player-score">
+                        <p>House Score</p>
+                        <h1 class="house-score score">0</h1>
+                    </div>
+                    <div class="player-score">
+                        <p>Your Score</p>
+                        <h1 class="user-score score">0</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-board">
+                <div class="choices-box">
+                    <div class="user-choice-box">
+                        <p class="user-title">You Picked</p>
+                        <div class="choice-load"></div>
+
+                        <div class="user-choice-container load-choice">
+                            <div class="computer-choice">
+                                <img src="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="house-choice-box">
+                        <p class="house-title">The House Picked</p>
+                        <div class="choice-load"></div>
+
+                        <div class="computer-choice-container load-choice">
+                            <div class="computer-choice">
+                                <img src="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result-container">
+                    <img class="result-img" src="">
+                    <h2 class="result"></h2>
+                    <div class="play-again">Play Again</div>
+                </div>
+
+                <div class="game-content">
+                    <img class="pentagon" src="./images/bg-pentagon.svg" alt="bg-pentagon">
+
+                    <div class="choices-container scissors" id="scissors">
+                        <div class="choices">
+                            <img src="./images/icon-scissors.svg" alt="">   
+                        </div>
+                    </div>
+                    <div class="choices-container paper" id="paper">
+                        <div class="choices">
+                            <img src="./images/icon-paper.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="choices-container rock" id="rock">
+                        <div class="choices">
+                            <img src="./images/icon-rock.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="choices-container lizard" id="lizard">
+                        <div class="choices">
+                            <img src="./images/icon-lizard.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="choices-container spock" id="spock">
+                        <div class="choices">
+                            <img src="./images/icon-spock.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="options">
+            <div class="reset">
+                <p>RESET SCORES</p>
+            </div>
+            <div class="rules-box">
+                <p>Rules</p>
+            </div>
+        </div>
+
+        <div class="modal">
+            <div class="modal-header">
+                <h1>RULES</h1>
+                <div class="close">
+                    <img src="./images/icon-close.svg" alt="close">
+                </div>
+            </div>
+            <div class="rules-img">
+                <img src="./images/image-rules-bonus.svg" alt="">
+            </div>
+        </div>
+
+        <div class="overlay"></div>
+    </main>
+</body>
+</html>
