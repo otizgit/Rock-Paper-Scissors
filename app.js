@@ -77,6 +77,9 @@ const choiceLoad = document.querySelectorAll(".choice-load");
 const userScore = document.querySelector(".user-score");
 const houseScore = document.querySelector(".house-score");
 
+let userCounter = localStorage.getItem("user-score");
+let houseCounter = localStorage.getItem("house-score");
+
 let userChoice;
 let computerChoice;
 let result;
@@ -237,31 +240,33 @@ playAgain.addEventListener("click", function () {
 });
 
 resetBtn.addEventListener("click", function () {
-  userScore.innerText = "0";
-  localStorage.setItem("user-score", userScore.innerText);
+  userCounter = 0
+  userScore.innerText = ""
+  localStorage.clear()
 
-  houseScore.innerText = "0"
-  localStorage.setItem("house-score", houseScore.innerText)
+  houseCounter = 0
+  houseScore.innerText = ""
+  localStorage.clear()
 });
 
 function updateUserScore() {
   setTimeout(() => {
-    userScore.innerText = parseInt(userScore.innerText) + 1;
-    localStorage.setItem("user-score", userScore.innerText);
-
-    userScore.innerText = localStorage.getItem("user-score")
+    userCounter++;
+    localStorage.setItem("user-score", userCounter);
+    userCounter = localStorage.getItem("user-score");
+    userScore.innerText = userCounter;
   }, 2800);
 }
 
-userScore.innerText = localStorage.getItem("user-score");
+userScore.innerText = userCounter;
 
 function updateHouseScore() {
   setTimeout(() => {
-    houseScore.innerText = parseInt(houseScore.innerText) + 1;
-    localStorage.setItem("house-score", houseScore.innerText);
-
-    houseScore.innerText = localStorage.getItem("house-score")
+    houseCounter++;
+    localStorage.setItem("house-score", houseCounter);
+    houseCounter = localStorage.getItem("house-score");
+    houseScore.innerText = houseCounter;
   }, 2800);
 }
 
-// houseScore.innerText = localStorage.getItem("house-score");
+houseScore.innerText = houseCounter;
