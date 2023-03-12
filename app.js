@@ -248,6 +248,8 @@ function updateUserScore() {
   setTimeout(() => {
     userScore.innerText = parseInt(userScore.innerText) + 1;
     localStorage.setItem("user-score", userScore.innerText);
+
+    userScore.innerText = localStorage.getItem("user-score")
   }, 2800);
 }
 
@@ -257,7 +259,9 @@ function updateHouseScore() {
   setTimeout(() => {
     houseScore.innerText = parseInt(houseScore.innerText) + 1;
     localStorage.setItem("house-score", houseScore.innerText);
+
+    houseScore.innerText = localStorage.getItem("house-score")
   }, 2800);
 }
 
-houseScore.innerText = localStorage.getItem("house-score");
+// houseScore.innerText = localStorage.getItem("house-score");
