@@ -1,4 +1,8 @@
 # Rock-Paper-Scissors
+This is a game of Rock, Paper, Scissors, Lizard and Spock
+Read the game's rules to understand the game and defeat the house if you can
+https://otizgit.github.io/Rock-Paper-Scissors/
+
 ![Screenshot (457)](https://user-images.githubusercontent.com/110433564/224576046-01a078bd-00e0-4484-ac21-23bac463c5c9.png)
 ![Screenshot (461)](https://user-images.githubusercontent.com/110433564/224575966-22d20957-01ae-4aa4-858b-fbbfa25de4ed.png)
 ![Screenshot (460)](https://user-images.githubusercontent.com/110433564/224575970-47332766-bd9a-43c7-86b4-6c2bfc9f6f96.png)
