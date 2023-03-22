@@ -1,6 +1,7 @@
 # Rock-Paper-Scissors
-This is a game of Rock, Paper, Scissors, Lizard and Spock
-Read the game's rules to understand the game and defeat the house if you can
+This is an advanced game of Rock, Paper, Scissors that also involves Lizard and Spock
+Read the game's rules before you begin and defeat the house if you can. 
+
 https://otizgit.github.io/Rock-Paper-Scissors/
 
 ![Screenshot (457)](https://user-images.githubusercontent.com/110433564/224576046-01a078bd-00e0-4484-ac21-23bac463c5c9.png)
